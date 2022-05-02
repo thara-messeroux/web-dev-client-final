@@ -1,0 +1,42 @@
+.circle-ellipsis{
+    font-size: 0.5em;
+    padding-left: 0.1em;
+}
+
+.avatar-images {
+    height: 48px;
+    width: 48px;
+    border-radius: 2em;
+}
+
+.search-bar-group > .fa-search {
+    top: 0.7em;
+    left: 1.0em;
+}
+
+.search-bar-group > .search-input {
+    text-indent: 2em;
+    border-radius: 2em;
+}
+
+.cog-icon {
+    font-size: 28px;
+    color: #0c6dfd;
+}
+
+.image-text-overlay {
+    left: 0.25em;
+    color:white;
+    bottom: 0.15em;
+}
+
+.story-images {
+    max-width: 6em;
+    max-height: 6em;
+    border-radius: 1em;
+    min-height: 0;
+}
+
+.border-color-gray {
+    border-color: #25272a !important;
+}

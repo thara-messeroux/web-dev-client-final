@@ -1,0 +1,44 @@
+.circle-ellipsis{
+    font-size: 0.5em;
+    padding-left: 0.1em;
+}
+
+.story-images {
+    max-width: 6em;
+    max-height: 6em;
+    border-radius: 1em;
+    min-height: 0;
+}
+
+.image-prof {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.border-color-gray {
+    border-color: #27292c !important;
+}
+
+.background-color-black {
+    background-color: black;
+}
+
+.border-rounded {
+    border-radius: 1em;
+}
+
+.border-top-only {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.no-link-decor > a {
+    text-decoration: none;
+}
+
+.text-area-custom {
+    color: white;
+    background-color: black;
+}
