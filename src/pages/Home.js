@@ -15,7 +15,9 @@ const Home = () => {
             }
         };
         // getting tweets about crypto
-        fetch('https://twitter32.p.rapidapi.com/getTweetsByHashtag?hashtag=johnnydeep', options)
+        // fetch('https://twitter32.p.rapidapi.com/getTweetsByHashtag?hashtag=johnnydeep', options)
+        fetch('https://twitter32.p.rapidapi.com/getSearch', options)
+
             .then(response => response.json())
             .then(response => {
                 console.log(response); setTweets(response)
