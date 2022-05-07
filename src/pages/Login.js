@@ -15,7 +15,7 @@ function Login() {
     console.log(username, password);
     localStorage.setItem('username', username);
 
-    const response = await fetch('https://web-dev-server-final.herokuapp.com/api/login', {
+    const response = await fetch('http://localhost:4000/api/login', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
@@ -36,7 +36,7 @@ function Login() {
       alert('User logged in successfully');
       navigate('/home');
     } else{
-      alert('Invalid email or password');
+      alert('Invalid username or password');
     }
 }
 
