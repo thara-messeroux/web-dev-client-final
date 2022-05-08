@@ -26,6 +26,7 @@ import IndexPage from "./pages/IndexPage.js";
 import ProfileId from "./pages/ProfileId.js";
 import Search from "./pages/Search.js";
 import Following from "./pages/Following.js";
+import Followers from "./pages/Followers.js";
 
 const reducers = combineReducers({ who, tuits, ProfileInfo, tuitsReducer });
 const store = createStore(reducers);
@@ -49,6 +50,7 @@ function App() {
               <Route path="profile/:id" element={<ProfileId />}/>
               <Route path="search/:id" element={<ProfileId />}/>
               <Route path="following/:id" element={<Following />}/>
+              <Route path="followers/:id" element={<Followers />}/>
             </Route>
           </Routes>
       </BrowserRouter>

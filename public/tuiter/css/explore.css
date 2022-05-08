@@ -1,0 +1,99 @@
+body{
+    background-color: black;
+}
+
+.searchbar{
+    position: relative;
+    background-color: #1a1e21;;
+    padding: 8px;
+    border-radius: 99px;
+    text-align: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.searchbar input {
+    background-color: #1a1e21;
+    color: white;
+    border: none;
+    height: 12px;
+    width:80%;
+    display: inline;
+
+}
+
+.fa-gear-custom{
+    position: absolute;
+    right: -25px;
+    top: 10px;
+    color: white;
+}
+
+.custom-img{
+    width: 50px;
+}
+
+.star-img-container{
+    position: relative;
+}
+
+.star-img-container h1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+}
+
+.suggested-posts{
+    margin-top: 10px;
+}
+
+.suggested-post{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    padding: 5px 16px;
+}
+
+.trending, .tweets{
+    color: #6c757d;
+    font-size: 13px;
+}
+
+.white{
+    color: white;
+}
+
+.right-content img{
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+}
+
+ul li a span{
+    color: #fff;
+}
+
+ul li a i{
+    color: white;
+    margin-right: 5px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.btn-follow{
+    background-color: white;
+    color: #1a1e21;
+    font-weight: bold;
+}
+
+.right-sidebar{
+    background-color: #1a1e21;
+    height: 50%;
+    border-radius: 15px;
+    margin: 20px 0px 0 0;
+    padding: 20px 10px 10px 10px;
+}

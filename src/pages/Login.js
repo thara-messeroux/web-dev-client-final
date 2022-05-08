@@ -15,7 +15,7 @@ function Login() {
     console.log(username, password);
     localStorage.setItem('username', username);
 
-    const response = await fetch('http://localhost:4000/api/login', {
+    const response = await fetch('https://web-dev-server-final.herokuapp.com/api/login', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
@@ -23,16 +23,22 @@ function Login() {
       body: JSON.stringify({
         _id,
         username,
-        password
+        password,
       })
     })
 
     const data = await response.json();
+    console.log(data);
     
     if(data.token){
       console.log(data.token)
       localStorage.setItem('token', data.token);
       localStorage.setItem('_id', data.user._id);
+      localStorage.setItem('username', data.user.username);
+      localStorage.setItem('email', data.user.email);
+      localStorage.setItem('phone', data.user.phone);
+      localStorage.setItem('dob', data.user.dob);
+      localStorage.setItem('college', data.user.college);
       alert('User logged in successfully');
       navigate('/home');
     } else{

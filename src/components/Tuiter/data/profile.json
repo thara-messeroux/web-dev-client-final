@@ -1,0 +1,14 @@
+{
+    "firstName": "Thara",
+    "numTuits": 1000,
+    "lastName": "Messeroux",
+    "handle": "thara",
+    "profilePicture": "./images/java.jpg",
+    "bio": "Full Stack Web Developer!",
+    "website": "thara.com",
+    "location": "Paris",
+    "dateOfBirth": "September 17, 1995",
+    "dateJoined": "March 2022",
+    "followingCount": 1,
+    "followersCount": "1M"
+}

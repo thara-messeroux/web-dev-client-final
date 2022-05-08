@@ -17,7 +17,7 @@ function Register() {
 	async function registerUser(event){
 		event.preventDefault();
 		console.log(name, email, password);
-		const response = await fetch('http://localhost:4000/api/register', {
+		const response = await fetch('https://web-dev-server-final.herokuapp.com/api/register', {
 			 method: 'POST',
 			 headers: {
 				 'content-type': 'application/json'

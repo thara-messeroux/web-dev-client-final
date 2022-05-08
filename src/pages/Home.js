@@ -5,6 +5,7 @@ import WhoToFollowList from '../components/Tuiter/WhoToFollowList';
 const Home = () => {
 		const [tweets, setTweets] = useState({});
 		const [searchValue, setSearchValue] = useState('');
+		const [loggedInUser, setLoggedInUser] = useState({});
 
 		useEffect(() => {
 				const options = {
@@ -21,6 +22,26 @@ const Home = () => {
 								console.log(response); setTweets(response)
 						})
 						.catch(err => console.error(err));
+		}, []);
+
+		useEffect(() => {
+			// Checking if user is logged in using localStorage token
+			const token = localStorage.getItem('token');
+			const username = localStorage.getItem('username');
+			const email = localStorage.getItem('email');
+			const phone = localStorage.getItem('phone');
+			// if user is logged in
+			if (token) {
+				// setting loggedInUser to the user's profile
+				setLoggedInUser({
+					username,
+					email,
+					phone
+				});
+			} else {
+				// if user is not logged in
+				setLoggedInUser('');
+			}
 		}, []);
 
 		function fetchTweets() {
@@ -64,7 +85,14 @@ const Home = () => {
 						)}
 			</div>
 			<div className="col-2 col-lg-4 col-xl-4">
-				<WhoToFollowList />
+				{Object.keys(loggedInUser).length > 0 &&
+					<div>
+						<h5 className='mb-2'>{loggedInUser && loggedInUser?.username}</h5>
+						<h6 className='mb-2'>{loggedInUser && loggedInUser?.email}</h6>
+						<strong className='mb-2'>{loggedInUser && loggedInUser?.phone}</strong>
+					<WhoToFollowList/>
+					</div>
+				}
 			</div>
 		</div>
 	)

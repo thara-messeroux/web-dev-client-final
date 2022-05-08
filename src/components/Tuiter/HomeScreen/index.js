@@ -1,27 +1,15 @@
 import React, { useEffect, useState } from "react";
-// https://web-dev-server-final.herokuapp.com/
+
 import PostList from "../PostList";
 import User from "../User/User";
 import WhatsHappening from "../whats-happening";
 
 const HomeScreen = () => {
 
-	const [user, setUser] = useState(null);
     const [profile, setProfile] = useState({});
 
-    useEffect(()=> {
-        const fetchUser = async () => {
-			const user = await fetch("https://web-dev-server-final.herokuapp.com//user");
-			const data = await user.json();
-			setUser(data);
-		}
-
-		fetchUser();
-    }, []);
-
-
     const username = localStorage.getItem('username');
-    console.log(username);
+    
     useEffect(() => {
         const options = {
             method: 'GET',
@@ -42,9 +30,9 @@ const HomeScreen = () => {
 
     return (
         <div className="col">
-            {<User profile={profile} />}
-            <WhatsHappening user={user}/>
-            <PostList profile={profile}/>
+            { Object.keys(profile).length > 0 && <User profile={profile} />}
+            <WhatsHappening/>
+            { Object.keys(profile).length > 0 && <PostList profile={profile}/>}
         </div>
     )
 }

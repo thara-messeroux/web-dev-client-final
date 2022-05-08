@@ -20,7 +20,13 @@ const NavigationSidebar = ({
                
                 <Link to="/profile" className={`list-group-item ${active === 'profile' ? 'active': ''}`}>
                     <span><i className="fas fa-user left-nav-icon"></i>
-                        <span className="d-none d-xl-inline">Profile</span>
+                        <span className="d-none d-xl-inline"> Profile</span>
+                    </span>
+                </Link>
+
+                <Link to="/search" className={`list-group-item ${active === 'search' ? 'active': ''}`}>
+                    <span><i className="fas fa-search left-nav-icon"></i>
+                        <span className="d-none d-xl-inline"> Search</span>
                     </span>
                 </Link>
               

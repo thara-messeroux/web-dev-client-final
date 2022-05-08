@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/explore.css">
+  <title>Tuiter Bootstrap</title>
+</head>
+
+<body class="white">
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2 col-md-3">
+      <ul class="nav flex-column nav-pills">
+        <li class="nav-item">
+          <i class="fa fa-brands fa-twitter"></i>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark d-flex" href="#">
+            <i class="fa fa-home pt-1" aria-hidden="true"></i>
+
+            <span class="d-sm-none d-lg-block bold">Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active d-flex" href="#">
+
+            <i class="fa fa-hashtag pt-1" aria-hidden="true"></i>
+            <span class="d-sm-none d-lg-block bold">Explore</span></a>
+
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark d-flex" href="#">
+            <i class="fa fa-bell pt-1" aria-hidden="true"></i>
+            <span class="d-sm-none d-lg-block bold">Notifications</span></a></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark d-flex" href="#">
+            <i class="fa fa-envelope pt-1" aria-hidden="true"></i>
+            <span class="d-sm-none d-lg-block bold">Messages</span></a>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark d-flex" href="#">
+            <i class="fa fa-bookmark pt-1" aria-hidden="true"></i>
+            <span class="d-sm-none d-lg-block bold">Bookmarks</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark d-flex" href="#">
+            <i class="fa fa-list-ul pt-1" aria-hidden="true"></i>
+            <span class="d-sm-none d-lg-block bold">Lists</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark d-flex" href="#">
+            <i class="fa fa-user pt-1" aria-hidden="true"></i>
+            <span class="d-sm-none d-lg-block bold">Profile</span></a>
+
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link text-dark d-flex" href="#">
+            <i class="fa fa-ellipsis-h pt-1" aria-hidden="true"></i>
+            <span class="d-sm-none d-lg-block bold">More</span></a>
+        </li>
+
+
+      </ul>
+      <button type="button" class="btn btn-block btn-primary rounded-pill w-100">
+        Tuit
+      </button>
+    </div>
+    <div class="col-sm-10 col-md-6">
+
+      <div class="searchbar">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input placeholder="Search Tuiter" class="form-control" id="inputPassword">
+
+        <a href="./explore-settings.html" target="_blank"><i class='fa fa-gear fa-lg fa-gear-custom'></i>
+
+        </a>
+
+      </div>
+
+
+      <div class="tabbable" id="tabs-352184">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link show text-muted fw-bold" href="#tab1" data-toggle="tab">For you</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted fw-bold" href="#tab2" data-toggle="tab">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted fw-bold" href="#tab2" data-toggle="tab">News</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-muted fw-bold" href="#tab2" data-toggle="tab">Sports</a>
+          </li>
+
+          <li class="nav-item d-sm-none">
+            <a class="nav-link text-muted fw-bold" href="#tab2" data-toggle="tab">Entertainment</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="panel-32255">
+            <p>
+              <!-- I'm in Section 1. -->
+            </p>
+          </div>
+          <div class="tab-pane" id="tab2">
+            <p>
+              <!-- Howdy, I'm in Section 2. -->
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="star-img-container">
+        <h1>SpaceX's Starship</h1>
+        <img class="w-100" alt="Bootstrap Image Preview" src="./images/starship.jpg" />
+
+      </div>
+
+      <div class="suggested-posts">
+        <div class="suggested-post">
+          <div class="left-content">
+            <p class="trending">Web Development</p>
+            <h5>ReactJS
+
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <span class="trending"> -2h</span>
+            </h5>
+
+            <h6>React.JS is a component based front end library that makes it very easy to build Single Page Applications or SPAs</h6>
+          </div>
+
+          <div class="right-content">
+            <img src="./images/react-icon.webp" alt="">
+          </div>
+        </div>
+
+
+
+        <div class="suggested-post">
+          <div class="left-content">
+            <h5>JavaScript
+
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <span class="trending"> -2h</span>
+            </h5>
+            <h6>JavaScript is programming language that can run on browsers as well as desktops</h6>
+            <p class="tweets">123K Tweets</p>
+          </div>
+
+          <div class="right-content">
+            <img src="./images/javascript.png" alt="JavaScript">
+
+          </div>
+        </div>
+
+
+
+        <div class="suggested-post">
+          <div class="left-content">
+            <p class="trending">Web Development
+
+            <h5>jQuery</h5>
+            <p class="tweets">123K Tweets</p>
+          </div>
+
+          <div class="right-content">
+            <img src="./images/jquery.png" alt="image">
+          </div>
+        </div>
+
+        <div class="suggested-post">
+          <div class="left-content">
+            <p class="trending">Web Development
+            </p>
+            <h5>NodeJS
+
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <span class="trending"> -2h</span>
+            </h5>
+          </div>
+
+          <div class="right-content">
+            <img src="./images/nodejs.png" alt="image">
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="col-md-3 d-sm-none d-md-block right-sidebar">
+      <h3>
+        Who to follow
+      </h3>
+      <div class="media d-flex justify-content-between mb-4">
+        <div class="media-content d-flex justify-content-between">
+          <img class="mr-3 img-fluid rounded-pill custom-img"
+               style="height: 50px; margin-right: 5px; width: 50px;" src="./images/java.png" />
+          <div class="media-body">
+            <h5 class="mt-0">
+              Java
+
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+
+            </h5> <span class="follow-id">
+                                @Java
+                            </span>
+          </div>
+        </div>
+
+
+        <div class="ml-1" style="margin-left: 20%;">
+          <button class="btn rounded-pill btn-follow">Follow</button>
+        </div>
+
+      </div>
+
+
+      <div class="media d-flex justify-content-between mb-4">
+        <div class="media-content d-flex justify-content-between">
+          <img class="mr-3 img-fluid rounded-pill custom-img"
+               style="height: 50px; margin-right: 5px; width: 50px;" src="./images/relativity.jpg" />
+          <div class="media-body">
+            <h5 class="mt-0">
+              Relativity
+
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+
+
+            </h5> <span class="follow-id">
+                                @relativityspace
+                            </span>
+          </div>
+        </div>
+
+
+        <div>
+          <button class="btn btn-primary rounded-pill btn-follow">Follow</button>
+        </div>
+
+      </div>
+
+      <div class="media d-flex justify-content-between mb-4">
+        <div class="media-content d-flex justify-content-between">
+          <img class="mr-3 img-fluid rounded-pill custom-img"
+               style="height: 50px; margin-right: 5px;" src="./images/glactic.jpg" />
+          <div class="media-body">
+            <h5 class="mt-0">
+              Virigin Galactic
+
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+
+
+            </h5> <span class="follow-id">
+                                @virgingalactic
+                            </span>
+          </div>
+        </div>
+
+
+        <div>
+          <button class="btn btn-primary rounded-pill btn-follow">Follow</button>
+        </div>
+
+      </div>
+
+      <div class="media d-flex justify-content-between mb-4">
+        <div class="media-content d-flex justify-content-between">
+          <img class="mr-3 img-fluid rounded-pill custom-img" style="height: 50px; width: 50px;"
+               src="./images/nasa.png" />
+          <div class="media-body" style="margin-left: 3px;">
+            <h5 class="mt-0">
+              NASA
+
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+
+            </h5> <span class="follow-id">
+                                @NASA
+                            </span>
+          </div>
+        </div>
+
+
+        <div>
+          <button class="btn btn-primary rounded-pill btn-follow">Follow</button>
+        </div>
+
+      </div>
+
+      <div class="media d-flex justify-content-between mb-4">
+        <div class="media-content d-flex justify-content-between">
+          <img class="mr-3 img-fluid rounded-pill custom-img" style="height: 50px; width: 50px;"
+               src="./images/tesla.png" />
+          <div class="media-body">
+            <h5 class="mt-0">
+              Tesla
+
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+
+            </h5> <span class="follow-id">
+                                @Tesla
+                            </span>
+          </div>
+        </div>
+
+
+        <div>
+          <button class="btn btn-primary rounded-pill btn-follow">Follow</button>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<script src="https://use.fontawesome.com/6b514ba987.js"></script>
+</body>
+
+</html>
