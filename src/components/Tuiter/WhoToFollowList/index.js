@@ -14,7 +14,7 @@ const WhoToFollowList = (loggedInUser) => {
 		// asking for confirmation
 		if(window.confirm("Are you sure you want to delete your account?")){
 			const id = localStorage.getItem('_id');
-			const response = await fetch(`https://web-dev-server-final.herokuapp.com/api/user/${id}`, {
+			const response = await fetch(`https://web-dev-final.herokuapp.com/api/user/${id}`, {
 				method: 'DELETE',
 				headers: {
 					'content-type': 'application/json'

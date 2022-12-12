@@ -58,7 +58,7 @@ const ProfileId = () => {
 		async function fetchUserLocalData() {
 		// /api/user/username/:username using this route to get the user profile
 			const response = await fetch(
-				`https://web-dev-server-final.herokuapp.com/api/user/username/${searcheduser}`
+				`https://web-dev-final.herokuapp.com/api/user/username/${searcheduser}`
 			);
 			const data = await response.json();
 			if(data){

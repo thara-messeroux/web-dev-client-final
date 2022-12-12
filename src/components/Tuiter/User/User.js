@@ -9,7 +9,7 @@ const User = ({user, profile}) => {
 	useEffect(() => {
 		const userId = localStorage.getItem('_id');
 		// getting data from /api/user/:id
-		const url = `https://web-dev-server-final.herokuapp.com/api/user/${userId}`;
+		const url = `https://web-dev-final.herokuapp.com/api/user/${userId}`;
 		fetch(url, {
 			method: 'GET',
 			headers: {
@@ -35,7 +35,7 @@ const User = ({user, profile}) => {
 		// if the user enters a new username
 		if(newUsername || newEmail || newPhone || newDOB || newCollege){
 			const userId = localStorage.getItem('_id');
-			const url = `https://web-dev-server-final.herokuapp.com/api/edituser/${userId}`;
+			const url = `https://web-dev-final.herokuapp.com/api/edituser/${userId}`;
 			const data = {
 				username: newUsername,
 				email: newEmail,

@@ -25,7 +25,7 @@ const Tuiter = () => {
 
     async function fetchUsers() {
       const response = await fetch(
-        "https://web-dev-server-final.herokuapp.com/api/users"
+        "https://web-dev-final.herokuapp.com/api/users"
       );
       const users = await response.json();
       console.log("users are", users);
